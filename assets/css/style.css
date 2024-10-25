@@ -46,6 +46,16 @@ main {
     flex: 1 0 auto;
 }
 
+/* Start Game Button Icon */
+.start-button {
+    background-color: transparent;
+    border: none;
+}
+
+#start-button-icon {
+    width: 50%;
+}
+
 /* Footer */
 footer {
     background-color: #202332;

@@ -28,25 +28,30 @@
     <!-- Collapsible info box for mobile and tablet -->
     <section id="info-section">
         <div class="info-container">
-            <input type="checkbox" id="info-toggle" name="info-toggle" aria-expanded="false">
+            <input type="checkbox" id="info-toggle" name="info-toggle" aria-expanded="false" role="checkbox">
             <label for="info-toggle" class="info-icon" aria-label="Toggle down info icon">
                 ?
             </label>
         </div>
         <div class="info-box" hidden>
+            <h2>About the Game</h2>
             <p>More about how to play the game, and especially about the timer feature.</p>
         </div>
     </section>
 
     <main>
         <div id="start-button-container">
-            <a href="" class="start-button" aria-label="Click to start the game"></a>
-            <img src="assets/images/crystal-ball.png" id="start-button-icon" alt="Violet crystal ball">
-            <span class="button-label">Touch the crystal ball to start</span>
+            <button class="start-button" aria-label="Click to start the game">
+                <img src="assets/images/crystal-ball.png" id="start-button-icon" alt="Violet crystal ball">
+                <span class="button-label">Touch the crystal ball to start</span>
+            </button>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <p>&copy; 2024 Oneiric Oracle. All rights reserved.</p>
+        <p><a href="">Legal</a> | <a href="">Privacy</a></p>
+    </footer>
 </body>
 
 </html>

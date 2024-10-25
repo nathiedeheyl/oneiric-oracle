@@ -72,7 +72,7 @@
 
 ### Colors and Contrast
 
-- **Primary Colors**: 
+- **Primary Colors**: https://coolors.co/444054-b26e63-519872-dedbd2-c04cfd 
 
 ## Features
 
@@ -90,7 +90,9 @@
 ## Technologies
 
 - Google Fonts for typography
-- Font Awesome for favicon
+- Flaticon for icons 
+- Favicon.io for converting icon to favicon 
+- Coolors for generating the color palette
 
 ## Testing
 
@@ -122,4 +124,4 @@
 
 ### Resources
 
-- 
+- Coolors: https://coolors.co/

@@ -68,7 +68,14 @@
 
 ### Fonts
 
-...
+### Font Choices
+
+For the **Oneiric Oracle** website, I chose two creative fonts to transport the mystic vibe of a fortune teller's tent: 
+
+| Font  | Use               | Justification                                                                                                                                           |
+|-------|------------------------|-------------------------------------------------------------------------------|
+| Cinzel | Headings & Buttons | Mysterious, still elegant, fitting the vibe. |
+| Lora   | Italic for body texts | For body text I'm generally trying to go for a more subtle version that is easier to read to assure user friendliness. The Lora font provides those aspects while still fitting the mystical vibe that Cinzel gives. |
 
 ### Colors and Contrast
 
@@ -125,3 +132,4 @@
 ### Resources
 
 - Coolors: https://coolors.co/
+- Fonts: https://fonts.google.com/

@@ -112,7 +112,8 @@
 
 ### Media
 
-- 
+- Favicon Emoji Source: <a href="https://www.flaticon.com/free-icons/crystal-ball" title="crystal ball icons">Crystal ball icons created by Freepik - Flaticon</a> 
+- Favicon converter: https://favicon.io/favicon-converter/ 
 
 ### Resources
 

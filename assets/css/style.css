@@ -1,2 +1,46 @@
 /* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Base styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Lora', serif;
+    color: white;
+    text-align: center;
+}
+
+/* Typography */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    /* English violet from palette */
+    background-color: #413D51;
+}
+
+h1, h2 {
+    font-family: 'Cinzel', serif;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+    /* Raisin black from color palette */
+    background-color: #202332;
+    padding: 1rem;
+}
+
+/* Main */
+main {
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #202332;
+    padding: 1rem;
+}

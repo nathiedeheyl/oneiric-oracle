@@ -79,7 +79,7 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 ### Colors and Contrast
 
-- **Primary Colors**: https://coolors.co/444054-b26e63-519872-dedbd2-c04cfd 
+- **Primary Colors**: https://coolors.co/202332-413d51-9102de-b26e63-519872
 
 ## Features
 

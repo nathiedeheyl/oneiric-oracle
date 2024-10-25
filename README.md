@@ -96,6 +96,9 @@
 
 ### Code validation 
 
+| **Validation Issue**                                | **Screenshot**          | **Fix**                                                |
+|-----------------------------------------------------|--------------------------|--------------------------------------------------------------|
+| Input element is missing required attribute: role  | ![Error Screenshot](assets/images/html_validation_1.png) | Added `role` attribute to `input type="checkbox"` element. |
 
 
 ### Manual Testing Checklist

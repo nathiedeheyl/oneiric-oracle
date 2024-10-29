@@ -35,7 +35,7 @@
         <div class="info-container">
             <input type="checkbox" id="info-toggle" name="info-toggle">
             <label for="info-toggle" class="info-icon" aria-label="Toggle down info icon">
-                ?
+                <img src="assets/images/speech-bubble-cloud-with-question-mark.png" alt="Cloud icon with question mark">
             </label>
         </div>
         <div class="info-box" hidden>
@@ -44,12 +44,15 @@
         </div>
     </section>
 
+    <!-- Quit session button -->
+    <button id="quit-button" class="hidden" aria-label="Quit session and return to the start page">Quit session</button>
+
     <main>
         <!-- Landing page layout -->
         <div id="start-button-container">
             <p id="intro-paragraph">A mysterious introduction, encouraging users to seek the hidden meaning of their
                 dreams... Step into the unknown… Let the crystal ball reveal what your dreams hide...</p>
-                <!-- Start "Game" button -->
+            <!-- Start "Game" button -->
             <button id="start-button" aria-label="Click to start the session">
                 <img src="assets/images/crystal-ball.png" id="start-button-icon" alt="Violet crystal ball">
             </button>
@@ -67,12 +70,12 @@
             </div>
 
             <!-- Timer and Progress bar -->
-             <div id="timer-container" class="hidden">
+            <div id="timer-container" class="hidden">
                 <div id="timer-icon"><img src="assets/images/stopwatch.png" alt=""></div>
                 <!-- Placeholder for inserting countdown timer -->
                 <div id="countdown">00:30</div>
                 <div id="progress-bar"></div>
-             </div>
+            </div>
         </section>
     </main>
 
@@ -81,7 +84,7 @@
         <p><a href="">Legal</a> | <a href="">Privacy</a></p>
     </footer>
     <!-- Link to Script -->
-     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

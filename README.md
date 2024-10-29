@@ -107,7 +107,7 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 | **Validation Issue**                                | **Screenshot**          | **Fix**                                                |
 |-----------------------------------------------------|--------------------------|--------------------------------------------------------------|
-| Input element is missing required attribute: role  | ![Error Screenshot](assets/images/html_validation_1.png) | Added `role` attribute to `input type="checkbox"` element. |
+| Attribute `aria-expanded` not valid at an early stage | ![Error Screenshot](assets/images/html_validation_2.png) | Removed the attribute to avoid confusion while working on the project | 
 
 
 ### Manual Testing Checklist
@@ -116,7 +116,19 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 ### Bugs
 
-- 
+- After a first validation when wrapping up the landing page html, the W3HTML validator pointed out an error indicating that `role="checkbox"` was missing for the `checkbox` `input` element. After adding `role="checkbox"` when validating the html code after setting up some basic html for the question sessions, I was prompted with the error: attribute `aria-checked` missing and role `checkbox` unnecessary at the same time. After testing and researching, I came to the conclusion that both attributes are obsolete for the element `input type="checkbox` and removed both which resolved the validation issue.  
+<details>
+<summary>Screenshot validation issues after landing page html</summary>
+
+![Error Screenshot](assets/images/html_validation_1.png)
+
+</details>
+<details>
+<summary>Screenshot validation error after question session html</summary>
+
+![Error Screenshot](assets/images/html_validation_4.png)
+
+</details>
 
 ## Deployment
 

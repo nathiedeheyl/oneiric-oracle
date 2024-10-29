@@ -8,7 +8,6 @@
     box-sizing: border-box;
     width: 100%;
     font-family: 'Lora', serif;
-    color: white;
     text-align: center;
 }
 
@@ -20,6 +19,7 @@ body {
     height: 100vh;
     /* English violet from palette */
     background-color: #413D51;
+    color: white;
 }
 
 h1,
@@ -54,6 +54,45 @@ main {
 }
 
 /* Landing page styles */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 25%;
+    position: relative;
+}
+
+#info-icon {
+    background-color: transparent;
+    color: white;
+    width: 65%;
+    padding: 0.25rem;
+}
+
+#info-box {
+    display: none;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 33%;
+    left: 5%;
+    max-width: 85vw;
+    z-index: 99;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+#info-box > h2 {
+    text-align: center;
+    color: black;
+}
+
+/* Toggle down info box */
+#info-toggle:checked~#info-box {
+    display: block;
+}
+
 #start-button {
     background-color: transparent;
     border: none;
@@ -64,6 +103,10 @@ main {
 }
 
 /* Question session styles */
+#quit-button {
+   
+}
+
 #question-card {
     width: 90%;
     max-width: 500px;

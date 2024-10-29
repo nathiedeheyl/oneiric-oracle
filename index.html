@@ -33,15 +33,16 @@
     <!-- Collapsible info box for mobile and tablet -->
     <section id="info-section">
         <div class="info-container">
-            <input type="checkbox" id="info-toggle" name="info-toggle">
-            <label for="info-toggle" class="info-icon" aria-label="Toggle down info icon">
-                <img src="assets/images/speech-bubble-cloud-with-question-mark.png" alt="Cloud icon with question mark">
+            <input type="checkbox" id="info-toggle" name="info-toggle" class="hidden">
+            <label for="info-toggle" aria-label="Toggle down info icon">
+                <img id="info-icon" src="assets/images/speech-bubble-cloud-with-question-mark.png" alt="Cloud icon with question mark">
             </label>
+            <div id="info-box">
+                <h2>About the Game</h2>
+                <p>More about how to play the game, and especially about the timer feature.</p>
+            </div>
         </div>
-        <div class="info-box" hidden>
-            <h2>About the Game</h2>
-            <p>More about how to play the game, and especially about the timer feature.</p>
-        </div>
+        
     </section>
 
     <!-- Quit session button -->

@@ -54,7 +54,7 @@ main {
 }
 
 /* Landing page styles */
-.start-button {
+#start-button {
     background-color: transparent;
     border: none;
 }
@@ -64,7 +64,7 @@ main {
 }
 
 /* Question session styles */
-.question-card {
+#question-card {
     width: 90%;
     max-width: 500px;
     background-color: #B26E63;

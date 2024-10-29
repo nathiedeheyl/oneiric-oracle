@@ -146,3 +146,7 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 - Coolors: https://coolors.co/
 - Fonts: https://fonts.google.com/
+
+### Research 
+
+- css columns: https://css-tricks.com/introduction-fr-css-unit/ 

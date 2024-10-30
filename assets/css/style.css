@@ -55,12 +55,11 @@ main {
 
 /* Landing page styles */
 .info-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-width: 25%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 20% 20%;
+    max-width: 100vw;
+    padding: 1rem;
+    justify-content: space-between;
 }
 
 #info-icon {
@@ -104,7 +103,11 @@ main {
 
 /* Question session styles */
 #quit-button {
-   
+    background-color: #9102DE;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin: 1rem 0;
+    max-block-size: fit-content;
 }
 
 #question-card {

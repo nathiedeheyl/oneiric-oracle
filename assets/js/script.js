@@ -4,20 +4,21 @@
 document.addEventListener("DOMContentLoaded", function () {
     const startButton = document.getElementById("start-button");
     const startButtonContainer = document.getElementById("start-button-container");
-    const questionCard = document.getElementById("question-card");
+    const questionCard = document.getElementById("question-card-container");
     const timerContainer = document.getElementById("timer-container");
     const infoToggle = document.getElementById("info-icon");
-    const infoBox = document.getElementById("info-box");
+    // const infoBox = document.getElementById("info-box");
     const quitButton = document.getElementById("quit-button");
 
-    // Collapsible info box 
-    
 
-    // Hide Landing page layout and show Question session layout 
+    /**
+     * Hide Landing page layout and show Question session layout
+     */
     function startSession() {
-        // Hide landing page
+        // Hide landing page layout 
         startButtonContainer.classList.add("hidden");
-        // Show question session 
+        infoToggle.classList.add("hidden");
+        // Show question session layout 
         questionCard.classList.remove("hidden");
         timerContainer.classList.remove("hidden");
         quitButton.classList.remove("hidden");
@@ -25,4 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Start the session 
     startButton.addEventListener("click", startSession)
+
+    /**
+     * Hide Question session layout and return to Landing page layout
+     */
+    function quitSession() {
+        // Hide question session layout
+        questionCard.classList.add("hidden");
+        timerContainer.classList.add("hidden");
+        quitButton.classList.add("hidden");
+        // Show landing page layout 
+        startButtonContainer.classList.remove("hidden");
+        infoToggle.classList.remove("hidden");
+    }
+
+    // Quit the session 
+    quitButton.addEventListener("click", quitSession);
 })

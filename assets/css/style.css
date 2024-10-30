@@ -111,7 +111,7 @@ main {
     max-block-size: fit-content;
 }
 
-#question-card-container {
+#question-container {
     width: 90%;
     max-width: 500px;
     margin: 1rem auto;
@@ -166,7 +166,20 @@ main {
 
 #countdown {}
 
-#progress-bar {}
+#progress-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 1px;
+    height: 20px;
+    margin: 2rem;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #9102DE;
+    width: 0%;
+    border-radius: 1px;
+}
 
 /* Footer */
 footer {

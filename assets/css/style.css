@@ -104,13 +104,20 @@ main {
 /* Question session styles */
 #quit-button {
     background-color: #9102DE;
+    color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border: none;
     margin: 1rem 0;
     max-block-size: fit-content;
 }
 
-#question-card {
+#question-card-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 1rem auto;
+}
+
+.question-card {
     width: 90%;
     max-width: 500px;
     background-color: #B26E63;
@@ -122,7 +129,10 @@ main {
     text-align: center;
 }
 
-.question-text {}
+.question-text {
+    text-align: center;
+    margin: 0;
+}
 
 .answer-options {
     display: grid;
@@ -133,6 +143,7 @@ main {
 
 .answer-button {
     background-color: #9102DE;
+    color: white;
     padding: 0.5rem 1rem;
 }
 
@@ -143,13 +154,15 @@ main {
 
 /* Countdown timer and progress bar */
 #timer-container {
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#timer-icon {}
+#timer-icon {
+    width: 15%;
+}
 
 #countdown {}
 

@@ -36,7 +36,8 @@
             <!-- Collapsible info box for mobile and tablet -->
             <input type="checkbox" id="info-toggle" name="info-toggle" class="hidden">
             <label for="info-toggle" aria-label="Toggle down info icon">
-                <img id="info-icon" src="assets/images/speech-bubble-cloud-with-question-mark.png" alt="Cloud icon with question mark">
+                <img id="info-icon" src="assets/images/speech-bubble-cloud-with-question-mark.png"
+                    alt="Cloud icon with question mark">
             </label>
             <div id="info-box">
                 <h2>About the Game</h2>
@@ -44,12 +45,13 @@
             </div>
 
             <!-- Quit session button -->
-    <button id="quit-button" class="hidden" aria-label="Quit session and return to the start page">Quit session</button>
+            <button id="quit-button" class="hidden" aria-label="Quit session and return to the start page">Quit
+                session</button>
         </div>
-        
+
     </section>
 
-    
+
 
     <main>
         <!-- Landing page layout -->
@@ -64,7 +66,8 @@
         </div>
 
         <!-- Question session layout -->
-        <section id="question-card" class="hidden">
+        <section id="question-card-container" class="hidden">
+            <section class="question-card">
             <h2 class="question-text">Question 1</h2>
             <div class="answer-options">
                 <button class="answer-button" data-value="1">Answer 1</button>
@@ -72,6 +75,7 @@
                 <button class="answer-button" data-value="3">Answer 3</button>
                 <button class="answer-button" data-value="4">Answer 4</button>
             </div>
+        </section>
 
             <!-- Timer and Progress bar -->
             <div id="timer-container" class="hidden">

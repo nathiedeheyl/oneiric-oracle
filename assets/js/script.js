@@ -74,7 +74,7 @@ const questionCard = document.getElementById("question-container");
 const timerContainer = document.getElementById("timer-container");
 const infoToggle = document.getElementById("info-icon");
 
-const feedbackPage = document.getElementById("feedback-section")
+const feedbackPage = document.getElementById("feedback-section");
 
 
 // Wait for the DOM to finish loading before allowing to start session 
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Definition of question session variables 
 const quitButton = document.getElementById("quit-button");
 
-const totalQuestions = 2;
+const totalQuestions = 7;
 let currentQuestionIndex = 0;
 const progressBar = document.getElementById("progress-bar");
 
@@ -120,7 +120,6 @@ function showQuestions() {
     for (let i = 0; i < answerButtons.length; i++) {
         console.log(questions[0].answers[0].text);
         answerButtons[i].innerText = questions[currentQuestionIndex].answers[i].text;
-        
     }
 
     // Click event for answer-buttons 
@@ -139,9 +138,13 @@ function showQuestions() {
  * Handle show next question, with a progress bar update or 
  * show feedback layout when all questions are answered
  */
-function answerQuestion() {
+function answerQuestion(event) {
 
     // Calculate score from clicked button 
+    let score = parseInt(event.target.getAttribute('data-value'));
+    console.log(score);
+    totalScore += score; 
+    console.log(totalScore);
 
     currentQuestionIndex++;
     // Show next question and update progress or show feedback: 
@@ -153,6 +156,9 @@ function answerQuestion() {
     timerContainer.classList.add("hidden");
     // Show feedback page layout 
     feedbackPage.classList.remove("hidden");
+    
+    // ??? Insert here - - function to show feedback message "interpretation"
+
     }
 }
 
@@ -166,15 +172,11 @@ function updateProgressBar() {
     // update width of progress bar 
     progressBar.style.width = progressPercentage + "%";
 
-
-    // ??? Insert here - - function to store data-score and add to final sum to determine feedback 
-
-
     showQuestions();
 }
 
 
-// Insert here - - function to hide question session layout and display feedback layout with corresponding feedback 
+// Insert here - - function to display feedback corresponding to score 
 
 
 /**
@@ -190,6 +192,10 @@ function quitSession() {
     infoToggle.classList.remove("hidden");
     // Hide feedback page after finishing session 
     feedbackPage.classList.add("hidden");
+
+    // Reset totalScore and currentQuestionIndex to start over
+    totalScore = 0; 
+    currentQuestionIndex = 0; 
 }
 
 // Quit the session 

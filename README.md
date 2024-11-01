@@ -89,6 +89,8 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 - A prompt when the timer runs out for the first time without answer selection from user whether the user prefers to switch off the timer feature instead. 
 - Switch off the timer feature before starting the game. 
+- dream log (text input) or diary
+- Natural language processing and keyword recognition of dream log 
 
 ## Languages
 

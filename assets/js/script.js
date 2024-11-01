@@ -77,6 +77,9 @@ function showQuestions() {
 
     // Click event for answer-buttons 
     for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].replaceWith(answerButtons[i].cloneNode(true));
+    }
+    for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].addEventListener("click", answerQuestion);
     }
     

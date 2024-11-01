@@ -69,6 +69,7 @@ main {
     padding: 0.25rem;
 }
 
+/* Toggle down info box */
 #info-box {
     display: none;
     background-color: white;
@@ -87,7 +88,6 @@ main {
     color: black;
 }
 
-/* Toggle down info box */
 #info-toggle:checked~#info-box {
     display: block;
 }
@@ -178,6 +178,43 @@ main {
     background-color: #9102DE;
     width: 0%;
     border-radius: 1px;
+}
+
+/* Feedback page styles */
+#feedback-section {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 1rem 3rem 1rem;
+}
+
+.feedback-card {
+    width: 90%;
+    max-width: 500px;
+    background-color: #B26E63;
+    color: black;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 1rem 1rem 3rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+#feedback-title {
+    text-align: center;
+    margin: 0;
+}
+
+#feedback-message {}
+
+#feedback-section > p {
+    font-size: 0.5rem;
+    font-style: italic;
+    background-color: white;
+    color: black;
+    max-width: 85vw;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 /* Footer */

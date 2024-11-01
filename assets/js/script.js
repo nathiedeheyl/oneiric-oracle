@@ -225,15 +225,20 @@ function updateProgressBar() {
  * Display feedback message according to totalScore range
  */
 function displayFeedback() {
+    let feedbackTitle = document.getElementById("feedback-title");
     let feedbackMessage = document.getElementById("feedback-message");
 
     if (totalScore <= 7) {
+        feedbackTitle.innerText = feedbackMessages[0].title;
         feedbackMessage.innerText = feedbackMessages[0].message;
     } else if (totalScore <= 14) {
+        feedbackTitle.innerText = feedbackMessages[1].title;
         feedbackMessage.innerText = feedbackMessages[1].message;
     } else if (totalScore <= 21) {
+        feedbackTitle.innerText = feedbackMessages[2].title;
         feedbackMessage.innerText = feedbackMessages[2].message;
     } else {
+        feedbackTitle.innerText = feedbackMessages[3].title;
         feedbackMessage.innerText = feedbackMessages[3].message;
     }
 }
@@ -263,15 +268,19 @@ quitButton.addEventListener("click", quitSession);
 
 // Feedback catalogue 
 const feedbackMessages = [{
+        title: "A bright path ahead", 
         message: "Your dream reflects clarity and hope. You seem to be on a path of self-discovery and purpose, where the symbols in your dreams may guide you forward. Embrace this time of promise, and let it fuel your journey."
     },
     {
+        title: "Unresolved mysteries", 
         message: "Your dream brings mystery and calls for reflection. There may be questions lingering within, unresolved or deep-seated. Take this as a moment to explore your inner world and uncover what’s waiting for you there."
     },
     {
+        title: "Caution and call for awareness", 
         message: "Your dream suggests a message of caution and awareness. You may be facing challenges or potential changes, and this dream is here to signal the importance of boundaries and foresight. Pay attention to the signs."
     },
     {
+        title: "Grounded in peace", 
         message: "Your dream conveys peace and acceptance. There is a sense of calm surrounding you, with a readiness to grow and embrace your path, past and future alike. Trust this grounding energy and continue forward with grace."
     }
 ];

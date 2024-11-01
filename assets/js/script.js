@@ -3,21 +3,66 @@ const questions = [
     {
     question: 'In your dream, what kind of environmenet were you in?',
         answers: [
-            { text: 'A peaceful, familiar place', score: 4 },
-            { text: 'A mysterious, unknown place', score: 3 },
-            { text: 'A place filled with activity and people', score: 2 },
-            { text: 'A calm, natural landscape', score: 1 },
+            { text: 'A familiar place' },
+            { text: 'An unknown place' },
+            { text: 'Buzzing and crowded place' },
+            { text: 'Natural landscape' },
         ]
 }, 
 {
     question: 'What were you doing?', 
     answers: [
-        { text: 'Walking around exploring', score: 4}, 
-        { text: 'Flying or floating above the scene', score: 3}, 
-        { text: 'Running, possibly escaping from something', score: 2}, 
-        { text: 'Standing still, possibly ovserving the situation', score: 2}
+        { text: 'Walking around exploring'}, 
+        { text: 'Floating above the scene'}, 
+        { text: 'Running, possibly escaping'}, 
+        { text: 'Standing still and ovserving'}
     ]
-}
+}, 
+{
+    question: 'How did you feel?', 
+    answers: [
+        { text: 'Hopeful'}, 
+        { text: 'Confused'}, 
+        { text: 'Anxious'}, 
+        { text: 'Relaxed'}
+    ]
+}, 
+{
+    question: 'Did you interact with someone?', 
+    answers: [
+        { text: 'A new connection'}, 
+        { text: 'Not really'}, 
+        { text: 'Someone I might know'}, 
+        { text: 'A close person'}
+    ]
+}, 
+{
+    question: 'How was the setting?', 
+    answers: [
+        { text: 'Bright'}, 
+        { text: 'Foggy'}, 
+        { text: 'Dimmed'}, 
+        { text: 'Serene'}
+    ]
+}, 
+{
+    question: 'What actions happened?', 
+    answers: [
+        { text: 'Presented solution'}, 
+        { text: 'Unresolved events'}, 
+        { text: 'Fast movements'}, 
+        { text: 'Something came to end'}
+    ]
+}, 
+{
+    question: 'How did you feel when waking up', 
+    answers: [
+        { text: 'Promising feeling'}, 
+        { text: 'Unanswered questions'}, 
+        { text: 'Heavy-hearted'}, 
+        { text: 'Steady'}
+    ]
+}, 
 
 ];
 
@@ -58,6 +103,7 @@ const quitButton = document.getElementById("quit-button");
 
 const totalQuestions = 2;
 let currentQuestionIndex = 0;
+const progressBar = document.getElementById("progress-bar");
 
 let answerButtons = document.getElementsByClassName("answer-button");
 let questionText = document.getElementsByClassName("question-text");
@@ -69,7 +115,7 @@ let totalScore = 0;
  * and jump to answerQuestion() once answer button is clicked 
  */
 function showQuestions() {
-    questionText.innerText = questions[currentQuestionIndex].question;
+    questionText[0].innerText = questions[currentQuestionIndex].question;
 
     for (let i = 0; i < answerButtons.length; i++) {
         console.log(questions[0].answers[0].text);
@@ -115,7 +161,6 @@ function answerQuestion() {
  * Function to calculate progress and update progress bar 
  */
 function updateProgressBar() {
-    const progressBar = document.getElementById("progress-bar");
     // calculate percentage of progress 
     let progressPercentage = ((currentQuestionIndex + 1 / totalQuestions) * 100);
     // update width of progress bar 

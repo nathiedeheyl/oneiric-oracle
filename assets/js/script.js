@@ -12,9 +12,9 @@ const questions = [
 {
     question: 'What were you doing?', 
     answers: [
-        { text: 'Walking around exploring', score: 4}
-        { text: 'Flying or floating above the scene', score: 3}
-        { text: 'Running, possibly escaping from something', score: 2}
+        { text: 'Walking around exploring', score: 4}, 
+        { text: 'Flying or floating above the scene', score: 3}, 
+        { text: 'Running, possibly escaping from something', score: 2}, 
         { text: 'Standing still, possibly ovserving the situation', score: 2}
     ]
 }

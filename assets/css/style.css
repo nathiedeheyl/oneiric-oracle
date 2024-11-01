@@ -167,7 +167,6 @@ main {
 #countdown {}
 
 #progress-bar-container {
-    width: 100%;
     background-color: #ddd;
     border-radius: 1px;
     height: 20px;

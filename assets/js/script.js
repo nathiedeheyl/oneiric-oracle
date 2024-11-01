@@ -105,7 +105,6 @@ function answerQuestion() {
     // Hide question session layout
     questionCard.classList.add("hidden");
     timerContainer.classList.add("hidden");
-    quitButton.classList.add("hidden");
     // Show feedback page layout 
     feedbackPage.classList.remove("hidden");
     }
@@ -144,6 +143,8 @@ function quitSession() {
     // Show landing page layout 
     startButtonContainer.classList.remove("hidden");
     infoToggle.classList.remove("hidden");
+    // Hide feedback page after finishing session 
+    feedbackPage.classList.add("hidden");
 }
 
 // Quit the session 

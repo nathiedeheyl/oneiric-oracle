@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startButton.addEventListener("click", startSession);
 });
 
-// Question value count and progress bar update 
+// Question value count  
 const totalQuestions = 7;
 let currentQuestionIndex = 0;
 
@@ -61,17 +61,30 @@ let currentQuestionIndex = 0;
  */
 function showQuestions() {
     let answerButtons = document.getElementsByClassName("answer-button");
+    let questionText = document.getElementsByClassName("question-text");
+
+    questionText.innerText = questions[currentQuestionIndex].question;
 
     for (let i = 0; i < answerButtons.length; i++) {
         console.log(questions[0].answers[0].text);
         answerButtons[i].innerText = questions[currentQuestionIndex].answers[i].text;
+        
     }
-}
+};
+
+
+let totalScore = 0; 
 
 // Click event for answer-buttons 
-
-
+answerButtons[i].addEventListener("click", function() {
 // Insert here - - function to store data-score and add to final sum to determine feedback 
+answerQuestion();
+}); 
+
+
+
+
+
 
 
 /**
@@ -87,7 +100,7 @@ function answerQuestion() {
     } else {
         // Insert - - function to hide question session layout and display feedback layout 
     }
-}
+};
 
 
 /**
@@ -99,7 +112,7 @@ function updateProgressBar() {
     let progressPercentage = ((currentQuestionIndex + 1 / totalQuestions) * 100);
     // update width of progress bar 
     progressBar.style.width = progressPercentage + "%";
-}
+};
 
 
 // Insert here - - function to hide question session layout and display feedback layout with corresponding feedback 
@@ -116,7 +129,7 @@ function quitSession() {
     // Show landing page layout 
     startButtonContainer.classList.remove("hidden");
     infoToggle.classList.remove("hidden");
-}
+};
 
 // Quit the session 
 quitButton.addEventListener("click", quitSession);

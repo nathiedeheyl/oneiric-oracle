@@ -22,12 +22,14 @@ const questions = [
 ];
 
 
-// Definition of Landing page variables 
+// Definition of Landing page and feedback page variables 
 const startButton = document.getElementById("start-button");
 const startButtonContainer = document.getElementById("start-button-container");
 const questionCard = document.getElementById("question-container");
 const timerContainer = document.getElementById("timer-container");
 const infoToggle = document.getElementById("info-icon");
+
+const feedbackPage = document.getElementById("feedback-section")
 
 
 // Wait for the DOM to finish loading before allowing to start session 
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Definition of question session variables 
 const quitButton = document.getElementById("quit-button");
 
-const totalQuestions = questions.length;
+const totalQuestions = 2;
 let currentQuestionIndex = 0;
 
 let answerButtons = document.getElementsByClassName("answer-button");
@@ -100,7 +102,12 @@ function answerQuestion() {
     if (currentQuestionIndex < totalQuestions) {
         updateProgressBar();
     } else {
-        // Insert - - function to hide question session layout and display feedback layout 
+    // Hide question session layout
+    questionCard.classList.add("hidden");
+    timerContainer.classList.add("hidden");
+    quitButton.classList.add("hidden");
+    // Show feedback page layout 
+    feedbackPage.classList.remove("hidden");
     }
 }
 

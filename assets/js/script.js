@@ -158,8 +158,8 @@ let questionText = document.getElementsByClassName("question-text");
 let totalScore = 0;
 
 /**
- * Show (next) question, answers on answer-buttons
- * and jump to answerQuestion() once answer button is clicked 
+ * Display question text and answer options,
+ * by clicking on a button jump to next question
  */
 function showQuestions() {
     questionText[0].innerText = questions[currentQuestionIndex].question;
@@ -180,8 +180,9 @@ function showQuestions() {
 }
 
 /**
- * Handle show next question, with a progress bar update or 
- * show feedback layout when all questions are answered
+ * Calculate score from previously chosen answer,
+ * show next question with an updated progress bar or
+ * show feedback message when all questions are answered
  */
 function answerQuestion(event) {
 
@@ -202,13 +203,13 @@ function answerQuestion(event) {
         // Show feedback page layout 
         feedbackPage.classList.remove("hidden");
 
-        // ??? Insert here - - function to show feedback message "interpretation"
-
+        displayFeedback();
     }
 }
 
 /**
- * Function to calculate progress and update progress bar 
+ * Calculate progress, update progress bar
+ * and show the next question
  */
 function updateProgressBar() {
     // calculate percentage of progress 
@@ -220,11 +221,26 @@ function updateProgressBar() {
 }
 
 
-// Insert here - - function to display feedback corresponding to score 
+/**
+ * Display feedback message according to totalScore range
+ */
+function displayFeedback() {
+    let feedbackMessage = document.getElementById("feedback-message");
 
+    if (totalScore <= 7) {
+        feedbackMessage.innerText = feedbackMessages[0].message;
+    } else if (totalScore <= 14) {
+        feedbackMessage.innerText = feedbackMessages[1].message;
+    } else if (totalScore <= 21) {
+        feedbackMessage.innerText = feedbackMessages[2].message;
+    } else {
+        feedbackMessage.innerText = feedbackMessages[3].message;
+    }
+}
 
 /**
- * Hide Question session layout and return to Landing page layout
+ * Hide Question session layout, reset the totalScore and
+ * return to Landing page layout
  */
 function quitSession() {
     // Hide question session layout
@@ -246,17 +262,16 @@ function quitSession() {
 quitButton.addEventListener("click", quitSession);
 
 // Feedback catalogue 
-const feedbackMessage = [
-    A: {
+const feedbackMessages = [{
         message: "Your dream reflects clarity and hope. You seem to be on a path of self-discovery and purpose, where the symbols in your dreams may guide you forward. Embrace this time of promise, and let it fuel your journey."
     },
-    B: {
+    {
         message: "Your dream brings mystery and calls for reflection. There may be questions lingering within, unresolved or deep-seated. Take this as a moment to explore your inner world and uncover what’s waiting for you there."
     },
-    C: {
+    {
         message: "Your dream suggests a message of caution and awareness. You may be facing challenges or potential changes, and this dream is here to signal the importance of boundaries and foresight. Pay attention to the signs."
     },
-    D: {
+    {
         message: "Your dream conveys peace and acceptance. There is a sense of calm surrounding you, with a readiness to grow and embrace your path, past and future alike. Trust this grounding energy and continue forward with grace."
     }
 ];

@@ -1,71 +1,118 @@
 // Question catalogue 
-const questions = [
-    {
-    question: 'In your dream, what kind of environmenet were you in?',
-        answers: [
-            { text: 'A familiar place' },
-            { text: 'An unknown place' },
-            { text: 'Buzzing and crowded place' },
-            { text: 'Natural landscape' },
+const questions = [{
+        question: 'In your dream, what kind of environmenet were you in?',
+        answers: [{
+                text: 'A familiar place'
+            },
+            {
+                text: 'An unknown place'
+            },
+            {
+                text: 'Buzzing and crowded place'
+            },
+            {
+                text: 'Natural landscape'
+            },
         ]
-}, 
-{
-    question: 'What were you doing?', 
-    answers: [
-        { text: 'Walking around exploring'}, 
-        { text: 'Floating above the scene'}, 
-        { text: 'Running, possibly escaping'}, 
-        { text: 'Standing still and ovserving'}
-    ]
-}, 
-{
-    question: 'How did you feel?', 
-    answers: [
-        { text: 'Hopeful'}, 
-        { text: 'Confused'}, 
-        { text: 'Anxious'}, 
-        { text: 'Relaxed'}
-    ]
-}, 
-{
-    question: 'Did you interact with someone?', 
-    answers: [
-        { text: 'A new connection'}, 
-        { text: 'Not really'}, 
-        { text: 'Someone I might know'}, 
-        { text: 'A close person'}
-    ]
-}, 
-{
-    question: 'How was the setting?', 
-    answers: [
-        { text: 'Bright'}, 
-        { text: 'Foggy'}, 
-        { text: 'Dimmed'}, 
-        { text: 'Serene'}
-    ]
-}, 
-{
-    question: 'What actions happened?', 
-    answers: [
-        { text: 'Presented solution'}, 
-        { text: 'Unresolved events'}, 
-        { text: 'Fast movements'}, 
-        { text: 'Something came to end'}
-    ]
-}, 
-{
-    question: 'How did you feel when waking up', 
-    answers: [
-        { text: 'Promising feeling'}, 
-        { text: 'Unanswered questions'}, 
-        { text: 'Heavy-hearted'}, 
-        { text: 'Steady'}
-    ]
-}, 
+    },
+    {
+        question: 'What were you doing?',
+        answers: [{
+                text: 'Walking around exploring'
+            },
+            {
+                text: 'Floating above the scene'
+            },
+            {
+                text: 'Running, possibly escaping'
+            },
+            {
+                text: 'Standing still and ovserving'
+            }
+        ]
+    },
+    {
+        question: 'How did you feel?',
+        answers: [{
+                text: 'Hopeful'
+            },
+            {
+                text: 'Confused'
+            },
+            {
+                text: 'Anxious'
+            },
+            {
+                text: 'Relaxed'
+            }
+        ]
+    },
+    {
+        question: 'Did you interact with someone?',
+        answers: [{
+                text: 'A new connection'
+            },
+            {
+                text: 'Not really'
+            },
+            {
+                text: 'Someone I might know'
+            },
+            {
+                text: 'A close person'
+            }
+        ]
+    },
+    {
+        question: 'How was the setting?',
+        answers: [{
+                text: 'Bright'
+            },
+            {
+                text: 'Foggy'
+            },
+            {
+                text: 'Dimmed'
+            },
+            {
+                text: 'Serene'
+            }
+        ]
+    },
+    {
+        question: 'What actions happened?',
+        answers: [{
+                text: 'Presented solution'
+            },
+            {
+                text: 'Unresolved events'
+            },
+            {
+                text: 'Fast movements'
+            },
+            {
+                text: 'Something came to end'
+            }
+        ]
+    },
+    {
+        question: 'How did you feel when waking up',
+        answers: [{
+                text: 'Promising feeling'
+            },
+            {
+                text: 'Unanswered questions'
+            },
+            {
+                text: 'Heavy-hearted'
+            },
+            {
+                text: 'Steady'
+            }
+        ]
+    },
 
 ];
-
 
 // Definition of Landing page and feedback page variables 
 const startButton = document.getElementById("start-button");
@@ -108,7 +155,7 @@ const progressBar = document.getElementById("progress-bar");
 let answerButtons = document.getElementsByClassName("answer-button");
 let questionText = document.getElementsByClassName("question-text");
 
-let totalScore = 0; 
+let totalScore = 0;
 
 /**
  * Show (next) question, answers on answer-buttons
@@ -129,10 +176,8 @@ function showQuestions() {
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].addEventListener("click", answerQuestion);
     }
-    
+
 }
-
-
 
 /**
  * Handle show next question, with a progress bar update or 
@@ -143,7 +188,7 @@ function answerQuestion(event) {
     // Calculate score from clicked button 
     let score = parseInt(event.target.getAttribute('data-value'));
     console.log(score);
-    totalScore += score; 
+    totalScore += score;
     console.log(totalScore);
 
     currentQuestionIndex++;
@@ -151,17 +196,16 @@ function answerQuestion(event) {
     if (currentQuestionIndex < totalQuestions) {
         updateProgressBar();
     } else {
-    // Hide question session layout
-    questionCard.classList.add("hidden");
-    timerContainer.classList.add("hidden");
-    // Show feedback page layout 
-    feedbackPage.classList.remove("hidden");
-    
-    // ??? Insert here - - function to show feedback message "interpretation"
+        // Hide question session layout
+        questionCard.classList.add("hidden");
+        timerContainer.classList.add("hidden");
+        // Show feedback page layout 
+        feedbackPage.classList.remove("hidden");
+
+        // ??? Insert here - - function to show feedback message "interpretation"
 
     }
 }
-
 
 /**
  * Function to calculate progress and update progress bar 
@@ -194,9 +238,25 @@ function quitSession() {
     feedbackPage.classList.add("hidden");
 
     // Reset totalScore and currentQuestionIndex to start over
-    totalScore = 0; 
-    currentQuestionIndex = 0; 
+    totalScore = 0;
+    currentQuestionIndex = 0;
 }
 
 // Quit the session 
 quitButton.addEventListener("click", quitSession);
+
+// Feedback catalogue 
+const feedbackMessage = [
+    A: {
+        message: "Your dream reflects clarity and hope. You seem to be on a path of self-discovery and purpose, where the symbols in your dreams may guide you forward. Embrace this time of promise, and let it fuel your journey."
+    },
+    B: {
+        message: "Your dream brings mystery and calls for reflection. There may be questions lingering within, unresolved or deep-seated. Take this as a moment to explore your inner world and uncover what’s waiting for you there."
+    },
+    C: {
+        message: "Your dream suggests a message of caution and awareness. You may be facing challenges or potential changes, and this dream is here to signal the importance of boundaries and foresight. Pay attention to the signs."
+    },
+    D: {
+        message: "Your dream conveys peace and acceptance. There is a sense of calm surrounding you, with a readiness to grow and embrace your path, past and future alike. Trust this grounding energy and continue forward with grace."
+    }
+];

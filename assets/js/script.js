@@ -22,13 +22,12 @@ const questions = [
 ];
 
 
-// Definition of variables 
+// Definition of Landing page variables 
 const startButton = document.getElementById("start-button");
 const startButtonContainer = document.getElementById("start-button-container");
 const questionCard = document.getElementById("question-container");
 const timerContainer = document.getElementById("timer-container");
 const infoToggle = document.getElementById("info-icon");
-const quitButton = document.getElementById("quit-button");
 
 
 // Wait for the DOM to finish loading before allowing to start session 
@@ -52,17 +51,22 @@ document.addEventListener("DOMContentLoaded", function () {
     startButton.addEventListener("click", startSession);
 });
 
-// Question value count  
-const totalQuestions = 7;
+// Definition of question session variables 
+const quitButton = document.getElementById("quit-button");
+
+const totalQuestions = questions.length;
 let currentQuestionIndex = 0;
 
+let answerButtons = document.getElementsByClassName("answer-button");
+let questionText = document.getElementsByClassName("question-text");
+
+let totalScore = 0; 
+
 /**
- * Show (next) question and answers on answer-buttons
+ * Show (next) question, answers on answer-buttons
+ * and jump to answerQuestion() once answer button is clicked 
  */
 function showQuestions() {
-    let answerButtons = document.getElementsByClassName("answer-button");
-    let questionText = document.getElementsByClassName("question-text");
-
     questionText.innerText = questions[currentQuestionIndex].question;
 
     for (let i = 0; i < answerButtons.length; i++) {
@@ -70,20 +74,13 @@ function showQuestions() {
         answerButtons[i].innerText = questions[currentQuestionIndex].answers[i].text;
         
     }
-};
 
-
-let totalScore = 0; 
-
-// Click event for answer-buttons 
-answerButtons[i].addEventListener("click", function() {
-// Insert here - - function to store data-score and add to final sum to determine feedback 
-answerQuestion();
-}); 
-
-
-
-
+    // Click event for answer-buttons 
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].addEventListener("click", answerQuestion);
+    }
+    
+}
 
 
 
@@ -92,15 +89,17 @@ answerQuestion();
  * show feedback layout when all questions are answered
  */
 function answerQuestion() {
+
+    // Calculate score from clicked button 
+
     currentQuestionIndex++;
+    // Show next question and update progress or show feedback: 
     if (currentQuestionIndex < totalQuestions) {
-        // Show next question and update progress: 
-        showQuestions();
         updateProgressBar();
     } else {
         // Insert - - function to hide question session layout and display feedback layout 
     }
-};
+}
 
 
 /**
@@ -112,7 +111,13 @@ function updateProgressBar() {
     let progressPercentage = ((currentQuestionIndex + 1 / totalQuestions) * 100);
     // update width of progress bar 
     progressBar.style.width = progressPercentage + "%";
-};
+
+
+    // ??? Insert here - - function to store data-score and add to final sum to determine feedback 
+
+
+    showQuestions();
+}
 
 
 // Insert here - - function to hide question session layout and display feedback layout with corresponding feedback 
@@ -129,7 +134,7 @@ function quitSession() {
     // Show landing page layout 
     startButtonContainer.classList.remove("hidden");
     infoToggle.classList.remove("hidden");
-};
+}
 
 // Quit the session 
 quitButton.addEventListener("click", quitSession);

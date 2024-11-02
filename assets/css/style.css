@@ -82,6 +82,8 @@ main {
     top: 33%;
     left: 5%;
     max-width: 85vw;
+    max-height: 60vh;
+    overflow-y: auto;
     z-index: 99;
     border-radius: 5px;
     padding: 1rem;

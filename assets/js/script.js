@@ -261,6 +261,9 @@ function quitSession() {
     // Reset totalScore and currentQuestionIndex to start over
     totalScore = 0;
     currentQuestionIndex = 0;
+
+    // Reset Progress bar 
+    progressBar.style.width = 0;
 }
 
 // Quit the session 

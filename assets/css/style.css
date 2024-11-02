@@ -227,6 +227,11 @@ footer {
     padding: 1rem;
 }
 
+.footer-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
 .footer-table td {
     max-width: 50%;
     font-size: 0.8rem;
@@ -263,5 +268,33 @@ footer {
 
     #progress-bar-container {
         margin: 3rem auto;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #info-icon {
+        max-width: 30%;
+        padding: 1rem;
+    }
+    
+    #start-button-icon {
+        max-width: 25%;
+    }
+
+    .button-label {
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin: 0 auto 7rem;
+    }
+
+    #intro-paragraph {
+        font-size: 1rem;
+        padding: 1.3rem;
+        margin: 0 auto;
+    }
+
+    #feedback-section > p {
+        font-size: 0.8rem;
     }
 }

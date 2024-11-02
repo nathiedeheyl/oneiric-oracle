@@ -1,9 +1,9 @@
 # Your sometimes friendly Oneiric Oracle
-## For you it's probably just a game, but the stars are being dang serious about this. 
+## For you it's probably just a game, but the stars are being very serious about this. 
 
-![A future screenshot showcasing the responsiveness of the design]()
+![](assets/images/Preview_Responsiveness.png)
 
-[In the future, this will be a link for you to access the live website. Please don't try now, there's no point yet.]()
+[Preview the live site here](https://nathiedeheyl.github.io/oneiric-oracle/)
 
 ## General
 
@@ -17,19 +17,27 @@
 <details>
 <summary>Wireframes for Mobile Devices</summary>
 
-![Mobile Wireframe]()
+![Landing page for mobile 1](assets/images/landing%20page%20mobile.png)
+![Landing page for mobile 2](assets/images/landing%20page%20mobile%202.png)
+![Game page for mobile](assets/images/game%20page%20mobile.png)
+![Feedback page for mobile](assets/images/feedback%20page%20mobile.png)
 
 </details>
 <details>
 <summary>Wireframes for Tablet Devices</summary>
 
-![Tablet Wireframe]()
+![Landing page for tablet 1](assets/images/landing%20page%20tablet.png)
+![Landing page for tablet 2](assets/images/landing%20page%20tablet%202.png)
+![Game page for tablet](assets/images/game%20page%20tablet.png)
+![Feedback page for tablet](assets/images/feedback%20page%20tablet.png)
 
 </details>
 <details>
 <summary>Wireframes for Desktop</summary>
 
-![Desktop Wireframe]()
+![Landing page for desktop](assets/images/landing%20page%20desktop.png)
+![Game page for desktop](assets/images/game%20page%20desktop.png)
+![Feedback page for desktop](assets/images/feedback%20page%20desktop.png)
 
 </details>
 </details>
@@ -114,7 +122,7 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 ### Manual Testing Checklist
 
-- 
+- ... in the preview it looks as if the layout for tablet is not quite right, but that's because I though it'd be much more intuitive to go throught he quiz on a tablet held horizontally and then the layout looks much better to my eyes. 
 
 ### Bugs
 
@@ -156,7 +164,13 @@ The site was deployed using GitHub Pages. The steps to deploy are the following:
 
 - Coolors: https://coolors.co/
 - Fonts: https://fonts.google.com/
+- Code Institute's Submissions repository: https://github.com/Code-Institute-Submissions/ 
+- Research on elements, attributes, properties and functions, mainly using: https://developer.mozilla.org/ , https://www.w3schools.com/ , and https://stackoverflow.com/
 
 ### Research 
 
 - css columns: https://css-tricks.com/introduction-fr-css-unit/ 
+
+## Acknoledgements 
+
+I would like to thank my mentor, Rory Patrick Sheridan, for guiding me through the most difficult steps and always providing helpful insights. 

@@ -58,7 +58,6 @@ main {
     display: grid;
     grid-template-columns: 20% 20%;
     max-width: 100vw;
-    padding: 1rem;
     justify-content: space-between;
 }
 
@@ -66,7 +65,7 @@ main {
     background-color: transparent;
     color: white;
     width: 65%;
-    padding: 0.25rem;
+    padding: 0.5rem;
 }
 
 /* Toggle down info box */
@@ -92,6 +91,14 @@ main {
     display: block;
 }
 
+#intro-paragraph {
+    font-size: 0.7rem;
+    font-style: italic;
+    max-width: 85vw;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
 #start-button {
     background-color: transparent;
     border: none;
@@ -107,7 +114,8 @@ main {
     color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     border: none;
-    margin: 1rem 0;
+    padding: 0.5rem;
+    margin: 1rem 1.5rem 1rem -2rem;
     max-block-size: fit-content;
 }
 
@@ -148,8 +156,8 @@ main {
 }
 
 .answer-button:hover {
-    font-size: 1.2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    /* font-size: 1.2rem; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
 }
 
 /* Progress bar */
@@ -206,4 +214,17 @@ main {
 footer {
     background-color: #202332;
     padding: 1rem;
+}
+
+/* Media query: tablet and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    #info-icon {
+        width: 45%;
+    }
+
+    #quit-button {
+        padding: 1rem;
+        margin: 1rem 1.5rem 1rem -2.5rem;
+    }
 }

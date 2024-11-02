@@ -118,7 +118,7 @@ const questions = [{
 const startButton = document.getElementById("start-button");
 const startButtonContainer = document.getElementById("start-button-container");
 const questionCard = document.getElementById("question-container");
-const timerContainer = document.getElementById("timer-container");
+const progressBarContainer = document.getElementById("progress-bar-container");
 const infoToggle = document.getElementById("info-icon");
 
 const feedbackPage = document.getElementById("feedback-section");
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         infoToggle.classList.add("hidden");
         // Show question session layout 
         questionCard.classList.remove("hidden");
-        timerContainer.classList.remove("hidden");
+        progressBarContainer.classList.remove("hidden");
         quitButton.classList.remove("hidden");
 
         showQuestions();
@@ -199,7 +199,7 @@ function answerQuestion(event) {
     } else {
         // Hide question session layout
         questionCard.classList.add("hidden");
-        timerContainer.classList.add("hidden");
+        progressBarContainer.classList.add("hidden");
         // Show feedback page layout 
         feedbackPage.classList.remove("hidden");
 
@@ -213,7 +213,7 @@ function answerQuestion(event) {
  */
 function updateProgressBar() {
     // calculate percentage of progress 
-    let progressPercentage = ((currentQuestionIndex + 1 / totalQuestions) * 100);
+    let progressPercentage = (((currentQuestionIndex + 1) / totalQuestions) * 100);
     // update width of progress bar 
     progressBar.style.width = progressPercentage + "%";
 
@@ -250,7 +250,7 @@ function displayFeedback() {
 function quitSession() {
     // Hide question session layout
     questionCard.classList.add("hidden");
-    timerContainer.classList.add("hidden");
+    progressBarContainer.classList.add("hidden");
     quitButton.classList.add("hidden");
     // Show landing page layout 
     startButtonContainer.classList.remove("hidden");

@@ -186,14 +186,12 @@ main {
 #feedback-section {
     width: 90%;
     max-width: 500px;
-    margin: 0 1rem 3rem 1rem;
+    margin: 1rem auto;
 }
 
 .feedback-card {
-    width: 90%;
-    max-width: 500px;
+    max-width: fit-content;
     background-color: #B26E63;
-    color: black;
     border-radius: 5px;
     padding: 2rem;
     margin: 1rem 1rem 3rem 1rem;

@@ -17,7 +17,6 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    /* English violet from palette */
     background-color: #413D51;
     color: white;
 }
@@ -29,6 +28,10 @@ h2 {
     font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 1rem;
+}
+
+button {
+    font-size: 0.9rem;
 }
 
 /* Header */
@@ -219,6 +222,10 @@ footer {
 /* Media query: tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
+    button {
+        font-size: 1rem;
+    }
+    
     #info-icon {
         width: 45%;
     }

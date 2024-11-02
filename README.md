@@ -134,7 +134,14 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 ## Deployment
 
-- 
+The site was deployed using GitHub Pages. The steps to deploy are the following:
+
+- In the [GitHub repository](https://github.com/nathiedeheyl/oneiric-oracle), navigate to the Settings tab.
+- Under the heading "Code and automation", select "Pages".
+- From the Build and deployment section Branch drop-down menu, select the **Main** Branch and the /root folder, then click "Save".
+- Refresh the page. It should then say: "Your site was last deployed to the github-pages environment by the pages build and deployment workflow." and show the link to the live site on top of the page. 
+
+[View the live site here](https://nathiedeheyl.github.io/oneiric-oracle/)
 
 ## Credits
 

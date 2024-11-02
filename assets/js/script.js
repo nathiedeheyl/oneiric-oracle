@@ -119,7 +119,6 @@ const startButton = document.getElementById("start-button");
 const startButtonContainer = document.getElementById("start-button-container");
 const questionCard = document.getElementById("question-container");
 const progressBarContainer = document.getElementById("progress-bar-container");
-const infoToggle = document.getElementById("info-icon");
 
 const feedbackPage = document.getElementById("feedback-section");
 
@@ -132,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function startSession() {
         // Hide landing page layout 
         startButtonContainer.classList.add("hidden");
-        infoToggle.classList.add("hidden");
         // Show question session layout 
         questionCard.classList.remove("hidden");
         progressBarContainer.classList.remove("hidden");
@@ -254,7 +252,6 @@ function quitSession() {
     quitButton.classList.add("hidden");
     // Show landing page layout 
     startButtonContainer.classList.remove("hidden");
-    infoToggle.classList.remove("hidden");
     // Hide feedback page after finishing session 
     feedbackPage.classList.add("hidden");
 

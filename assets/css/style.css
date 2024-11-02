@@ -162,9 +162,15 @@ main {
     padding: 0.5rem 1rem;
 }
 
-.answer-button:hover {
-    /* font-size: 1.2rem; */
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); */
+.button-label {
+    background-color: #f8e884;
+    color: black;
+    padding: 0.1rem;
+    border-radius: 5px;
+    max-width: fit-content;
+    margin: 0 auto 2.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 /* Progress bar */
@@ -221,6 +227,11 @@ footer {
     padding: 1rem;
 }
 
+.footer-table td {
+    max-width: 50%;
+    font-size: 0.8rem;
+}
+
 /* Media query: tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -235,6 +246,15 @@ footer {
     #quit-button {
         padding: 1rem;
         margin: 1rem 1.5rem 1rem -2.5rem;
+    }
+
+    .button-label {
+        padding: 1rem;
+        border-radius: 5px;
+        max-width: fit-content;
+        margin: 0 auto 5rem;
+        font-size: 1rem;
+        font-weight: normal;
     }
 
     .question-card {

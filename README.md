@@ -46,7 +46,7 @@ The user answers 7 questions, with each answer corresponding to a different drea
 
 ### Purpose of the Project
 
-The Website "Oneiric Oracle" aims to provide the user with fun and light-hearted introduction to dream interpretation. Designed for users who are new to the world of dream interpretation, the project touches on common themes and symbols, without going to deep. The goal is to encourage reflection and give reassurance by validating the user's feelings and experiences while dreaming.  
+The Website "Oneiric Oracle" aims to provide the user with fun and light-hearted introduction to dream interpretation. Designed for users who are new to the world of dream interpretation, the project touches on common themes and symbols, without going too deep. The goal is to encourage reflection and give reassurance by validating the user's feelings and experiences while dreaming.  
 
 Introspection is fostered by presenting the user with a series of questions based on typical dream symbols. The interpretations given in the end are blended with a little bit of humor, containing just enough insight to spark curiosity about what our dreams might reveal, without taking oneself too seriously. 
 
@@ -56,7 +56,7 @@ The initial version of the project focuses on providing an engaging experience. 
 
 ### User Demographic
 
-Generally speaking, the project is designed to appeal to a broad age range. The website and it's game-like approach to dream interpretation is easily accessible to anyone interested and open to dream interpretation. However, the website targets mainly users who are beginners in the field of dream interpretation. The quiz-styled tool helps users who are curious about what their dream might mean, but who may not have any deeper knowledge about the topic or experience in dream interpretation yet. Target users are looking for a mix of entertainment and encouragement to self-reflect. 
+Generally speaking, the project is designed to appeal to a broad age range. The website and its game-like approach to dream interpretation is easily accessible to anyone interested and open to dream interpretation. However, the website targets mainly users who are beginners in the field of dream interpretation. The quiz-styled tool helps users who are curious about what their dream might mean, but who may not have any deeper knowledge about the topic or experience in dream interpretation yet. Target users are looking for a mix of entertainment and encouragement to self-reflect. 
 
 ### User Goals
 
@@ -68,7 +68,7 @@ Generally speaking, the project is designed to appeal to a broad age range. The 
 
 - A responsive, accessible website on all devices (mobile, tablet, desktop).
 - User-friendly and straightforward design with minimal steps to start the game. 
-- Intuitive navigation that guides the user throught the experience without distraction. 
+- Intuitive navigation that guides the user throughout the experience without distraction. 
 - Interactive, clickable elements that make it easy to progress through the game. 
 - A visible progress bar that helps track the position within the game. 
 - A clear outcome at the end of the game: A unique dream interpretation based on the answers chosen. 
@@ -79,7 +79,7 @@ Generally speaking, the project is designed to appeal to a broad age range. The 
 #### As a user ... 
 
 - I want to explore the meaning of my dreams in a fun and interactive way. 
-- I want to reflect on my subconcious thoughts and hidden feelings. 
+- I want to reflect on my subconscious thoughts and hidden feelings. 
 - I want clear steps (no multiple choice, one question, one answer) to answer the questions. 
 - I want a straightforward layout, so I can start the game easily and quickly. 
 - I want to gain some insight into the meaning of my dream and get a feedback after answering all questions. 
@@ -99,7 +99,9 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 | Font  | Use               | Justification                                                                                                                                           |
 |-------|------------------------|-------------------------------------------------------------------------------|
 | Cinzel | Headings & Buttons | Mysterious, still elegant, fitting the vibe. |
-| Lora   | Italic for body texts | For body text I'm generally trying to go for a more subtle version that is easier to read to assure user friendliness. The Lora font provides those aspects while still fitting the mystical vibe that Cinzel gives. |
+| Lora   | Italic for body texts | For body text, I'm generally trying to go for a more subtle version that is easier to read to assure user-friendliness. The Lora font provides those aspects while still fitting the mystical vibe that Cinzel gives. |
+
+The font-size is adjusted to occasionally be displayed slightly smaller on mobile screens to optimize the layout, ensuring a balanced appearance given the limited space on question cards and answer buttons, while always ensuring adaptability and accessability by using `rem` units for font sizing. This allows for better scaling according to the user's individual device settings. 
 
 ### Colors and Contrast
 
@@ -110,18 +112,29 @@ The website https://coolors.co/ provides information about contrast ratio of the
 To meet the general vibe of the website, I mostly choose white colored text on darker backgrounds, but picked also a vibrant and a very rich color for a more playful element and to ensure good contrast. 
 
 Changed the white text on `background-color: #B26E63;` to textcolor black to ensure color contrast: 
-![Screenshot from https://webaim.org/resources/contrastchecker/](assets/images/accessability_1.png)
+<details>
+<summary>Screenshot from contrast checker website</summary>
+
+![Screenshot from https://webaim.org/](assets/images/accessability_1.png)
+
+</details>
+
 
 ## Features
 
-- 
+- Start button in form of violet crystal ball img with label guiding user to click button to start the game 
+- Toggle down info box 
+- Quit session button to return to landing page layout 
+- Quiz-style question cards with clickable answer buttons that lead to next question card being displayed 
+- Question cards have a slightly flexible layout with a min-height to balance the design and layout of question cards and the text on them 
+- Dynaic progress bar 
 
 ## Possible Future Features
 
-- A prompt when the timer runs out for the first time without answer selection from user whether the user prefers to switch off the timer feature instead. 
-- Switch off the timer feature before starting the game. 
-- dream log (text input) or diary
-- Natural language processing and keyword recognition of dream log 
+- Customizable timer feature that jumps to next question after a given amount of time when user does not select an answer. The timer is reset with each new question displayed. The user should be able to switch off the timer feature before starting the game. The user will be prompted with an info text box once the timer runs out for the first time, explaining the feature one more time and pointing out the possibility of switching off the timer feature. The purpose of the timer feature will be to ensure the user answers the questions rapidly and intuitively without overthinking. 
+- Make feedback shareable on social media with a brand design template for different media. 
+- Dream log or diary in a personal user account 
+- Replace keyword answer buttons with text input and use natural language processing and keyword recognition to generate a truly unique dream interpretation using API. 
 
 ## Languages
 
@@ -141,11 +154,12 @@ Changed the white text on `background-color: #B26E63;` to textcolor black to ens
 | **Validation Issue**                                | **Screenshot**          | **Fix**                                                |
 |-----------------------------------------------------|--------------------------|--------------------------------------------------------------|
 | Attribute `aria-expanded` not valid at an early stage | ![Error Screenshot](assets/images/html_validation_2.png) | Removed the attribute to avoid confusion while working on the project | 
+| Stray end tag `div` after wrapping up last corrections to the html | ![Error Screenshot](assets/images/html_validation_5.png) | Removed leftover stray elements from code. |
 
 
 ### Manual Testing Checklist
 
-- ... in the preview it looks as if the layout for tablet is not quite right, but that's because I though it'd be much more intuitive to go throught he quiz on a tablet held horizontally and then the layout looks much better to my eyes. 
+- ... in the preview it looks as if the layout for tablet is not quite right, but that's because I thought it'd be much more intuitive to go throught he quiz on a tablet held horizontally and then the layout looks much better to my eyes. 
 
 ### Bugs
 
@@ -188,12 +202,8 @@ The site was deployed using GitHub Pages. The steps to deploy are the following:
 - Coolors: https://coolors.co/
 - Fonts: https://fonts.google.com/
 - Code Institute's Submissions repository: https://github.com/Code-Institute-Submissions/ 
-- Research on elements, attributes, properties and functions, mainly using: https://developer.mozilla.org/ , https://www.w3schools.com/ , and https://stackoverflow.com/
+- Research on elements, attributes, properties and functions, mainly using: https://developer.mozilla.org/ , https://www.w3schools.com/ , and https://stackoverflow.com/ or https://css-tricks.com/. 
 
-### Research 
-
-- css columns: https://css-tricks.com/introduction-fr-css-unit/ 
-
-## Acknoledgements 
+## Acknowledgments 
 
 I would like to thank my mentor, Rory Patrick Sheridan, for guiding me through the most difficult steps and always providing helpful insights. 

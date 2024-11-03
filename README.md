@@ -92,8 +92,6 @@ Generally speaking, the project is designed to appeal to a broad age range. The 
 
 ## Design
 
-### Fonts
-
 ### Font Choices
 
 For the **Oneiric Oracle** website, I chose two creative fonts to transport the mystic vibe of a fortune teller's tent: 
@@ -105,7 +103,14 @@ For the **Oneiric Oracle** website, I chose two creative fonts to transport the 
 
 ### Colors and Contrast
 
-- **Primary Colors**: https://coolors.co/202332-413d51-9102de-b26e63-519872
+- **Primary Colors**: https://coolors.co/202332-413d51-9102de-b26e63
+
+The website https://coolors.co/ provides information about contrast ratio of their colors towards black or white text color. 
+
+To meet the general vibe of the website, I mostly choose white colored text on darker backgrounds, but picked also a vibrant and a very rich color for a more playful element and to ensure good contrast. 
+
+Changed the white text on `background-color: #B26E63;` to textcolor black to ensure color contrast: 
+![Screenshot from https://webaim.org/resources/contrastchecker/](assets/images/accessability_1.png)
 
 ## Features
 

@@ -105,7 +105,7 @@ The font-size is adjusted to occasionally be displayed slightly smaller on mobil
 
 ### Colors and Contrast
 
-- **Primary Colors**: https://coolors.co/202332-413d51-9102de-b26e63
+**Primary Colors**: https://coolors.co/202332-413d51-9102de-b26e63
 
 The website https://coolors.co/ provides information about contrast ratio of their colors towards black or white text color. 
 
@@ -119,11 +119,11 @@ Changed the white text on `background-color: #B26E63;` to textcolor black to ens
 
 </details>
 
-
 ## Features
 
 - Start button in form of violet crystal ball img with label guiding user to click button to start the game 
 - Toggle down info box 
+- Text in info box is scrollable when text content is larger than info text box on screen 
 - Quit session button to return to landing page layout 
 - Quiz-style question cards with clickable answer buttons that lead to next question card being displayed 
 - Question cards have a slightly flexible layout with a min-height to balance the design and layout of question cards and the text on them 
@@ -146,36 +146,56 @@ Changed the white text on `background-color: #B26E63;` to textcolor black to ens
 - Flaticon for icons 
 - Favicon.io for converting icon to favicon 
 - Coolors for generating the color palette
+- WebAIM for contrast checking 
 
 ## Testing
 
-### Code validation 
+### Validation of clickable elements
+
+| Test  | Result  |
+| ------| ------- |
+| Toogle down info box link is working in all layout variations | ✅ |
+| Start session button is working | ✅ |
+| Quit session button leads back to landing page layout | ✅ | 
+| All answer buttons are clickable and lead to expected feedback result | ✅ | 
+| When a user attempts to acess any other page of the website they are redirected to the 404 page | ✅ | 
+| The "back to main" link on 404 page works, has a text-decoration styling applied on mobile devices and a hover effect on larger screens | ✅ | 
+
+### Responsiveness validation
+
+| Test  | Result  |
+| ------| ------- |
+| Landing page layout, info text box toggle, start game icon, footer, quit session button, question session layout, progress bar and feedback layout display correctly on screens smaller than 768px | ✅ |
+| Landing page layout, info text box toggle, start game icon, footer, quit session button, question session layout, progress bar and feedback layout display correctly on screens larger than 767px | ✅ | 
+| Landing page layout, info text box toggle, start game icon, footer, quit session button, question session layout, progress bar and feedback layout display correctly on screens larger than 1024px | ✅ | 
+
+Accessability validation: https://pagespeed.web.dev/analysis/https-nathiedeheyl-github-io-oneiric-oracle/kgevuq9ltr?form_factor=mobile 
+
+### Code validation
 
 | **Validation Issue**                                | **Screenshot**          | **Fix**                                                |
 |-----------------------------------------------------|--------------------------|--------------------------------------------------------------|
 | Attribute `aria-expanded` not valid at an early stage | ![Error Screenshot](assets/images/html_validation_2.png) | Removed the attribute to avoid confusion while working on the project | 
 | Stray end tag `div` after wrapping up last corrections to the html | ![Error Screenshot](assets/images/html_validation_5.png) | Removed leftover stray elements from code. |
 
-
-### Manual Testing Checklist
-
-- ... in the preview it looks as if the layout for tablet is not quite right, but that's because I thought it'd be much more intuitive to go throught he quiz on a tablet held horizontally and then the layout looks much better to my eyes. 
+| Final code Validation  | Result  |
+| ------| ------- |
+| index.html | ✅ |
+| 404.html | ✅ |
+| style.css | ✅ | 
+| script.js | ✅ | 
+  
+Validators used:  
+html: https://validator.w3.org/nu/#textarea  
+css: https://jigsaw.w3.org/css-validator/  
+js: https://jshint.com  
 
 ### Bugs
 
-- After a first validation when wrapping up the landing page html, the W3HTML validator pointed out an error indicating that `role="checkbox"` was missing for the `checkbox` `input` element. After adding `role="checkbox"` when validating the html code after setting up some basic html for the question sessions, I was prompted with the error: attribute `aria-checked` missing and role `checkbox` unnecessary at the same time. After testing and researching, I came to the conclusion that both attributes are obsolete for the element `input type="checkbox` and removed both which resolved the validation issue.  
-<details>
-<summary>Screenshot validation issues after landing page html</summary>
-
-![Error Screenshot](assets/images/html_validation_1.png)
-
-</details>
-<details>
-<summary>Screenshot validation error after question session html</summary>
-
-![Error Screenshot](assets/images/html_validation_4.png)
-
-</details>
+| **Bug Description** | **Screenshot** | **Fix** | 
+|-----------------------------------------------------|--------------------------|--------------------------------------------------------------|
+| After a first validation when wrapping up the landing page html, the W3HTML validator pointed out an error indicating that `role="checkbox"` was missing for the `checkbox` `input` element. After adding `role="checkbox"` when validating the html code after setting up some basic html for the question sessions, I was prompted with the error: attribute `aria-checked` missing and role `checkbox` unnecessary at the same time. | ![Error Screenshot](assets/images/html_validation_1.png) ![Error Screenshot](assets/images/html_validation_4.png) | After testing and researching, I came to the conclusion that both attributes are obsolete for the element `input type="checkbox` and removed both which resolved the validation issue. | 
+| After an answer-button was clicked and the next question displayed, the corresponding text of the next answer option belonging to the type of answer-button was resized in its font-size. | ![Error Screenshot](assets/images/js_bug_1.png) | The issue was a wrong application of hover effects on answer-buttons. Removing the hover effects solved the bug. |
 
 ## Deployment
 
@@ -199,7 +219,8 @@ The site was deployed using GitHub Pages. The steps to deploy are the following:
 
 ### Resources
 
-- Coolors: https://coolors.co/
+- Color palette: https://coolors.co/
+- Contrast check: https://webaim.org/resources/contrastchecker/ 
 - Fonts: https://fonts.google.com/
 - Code Institute's Submissions repository: https://github.com/Code-Institute-Submissions/ 
 - Research on elements, attributes, properties and functions, mainly using: https://developer.mozilla.org/ , https://www.w3schools.com/ , and https://stackoverflow.com/ or https://css-tricks.com/. 

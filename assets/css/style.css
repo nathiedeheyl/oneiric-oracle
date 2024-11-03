@@ -98,7 +98,7 @@ main {
     display: block;
 }
 
-#intro-paragraph {
+.intro-paragraph {
     font-size: 0.7rem;
     font-style: italic;
     max-width: 85vw;
@@ -290,7 +290,7 @@ footer {
         margin: 0 auto 7rem;
     }
 
-    #intro-paragraph {
+    .intro-paragraph {
         font-size: 1rem;
         padding: 1.3rem;
         margin: 0 auto;

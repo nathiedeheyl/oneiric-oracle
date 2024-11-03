@@ -146,6 +146,7 @@ main {
 }
 
 .question-text {
+    color: black;
     min-height: 65px;
     text-align: center;
     margin: 0;
@@ -200,6 +201,7 @@ main {
 .feedback-card {
     max-width: fit-content;
     background-color: #B26E63;
+    color: black;
     border-radius: 5px;
     padding: 2rem;
     margin: 1rem 1rem 3rem 1rem;
@@ -208,6 +210,7 @@ main {
 }
 
 #feedback-title {
+    color: black;
     text-align: center;
     margin: 0;
 }

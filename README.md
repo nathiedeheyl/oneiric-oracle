@@ -9,7 +9,9 @@
 
 ### Project Description
 
-...
+This web-based project is an interactive experience that offers to interpret a user’s dream. Rather than complex text analysis, the user is presented with questions reflecting common symbols in dream interpretation. Those questions are designed to trigger the user’s intuition. The user is also encouraged to respond quickly without overthinking. By responding intuitively to the given prompts, the user receives a dream "interpretation" tailored to the answers they’ve selected before.  
+
+The user answers 7 questions, with each answer corresponding to a different dream mood or concept. Each response option is assigned a specific value that adds up to a total score throughout the question session. After one answer has been selected by the user, the next question is displayed during question session. Based on the user's total score, they receive one of four possible dream interpretations.
 
 <details>
 <summary>Wireframes</summary>
@@ -44,7 +46,11 @@
 
 ### Purpose of the Project
 
-...
+The Website "Oneiric Oracle" aims to provide the user with fun and light-hearted introduction to dream interpretation. Designed for users who are new to the world of dream interpretation, the project touches on common themes and symbols, without going to deep. The goal is to encourage reflection and give reassurance by validating the user's feelings and experiences while dreaming.  
+
+Introspection is fostered by presenting the user with a series of questions based on typical dream symbols. The interpretations given in the end are blended with a little bit of humor, containing just enough insight to spark curiosity about what our dreams might reveal, without taking oneself too seriously. 
+
+The initial version of the project focuses on providing an engaging experience. The long-term vision is to develop the website into a more nuanced tool, incorporating text inputs with language processing and accessing a wider range of interpretation. For now, the purpose of the project is to make users curious about the world of symbols, and to be a fun prompt to encourage reflection and introspection on thoughts and feelings.
 
 ## UX
 

@@ -242,6 +242,10 @@ footer {
     font-size: 0.8rem;
 }
 
+#error-link {
+    color: white;
+}
+
 /* Media query: tablet and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -302,4 +306,13 @@ footer {
     #feedback-section > p {
         font-size: 0.8rem;
     }
+}
+
+#error-link {
+    color: white;
+    text-decoration: none;
+}
+
+#error-link:hover {
+    color: #f8e884);
 }

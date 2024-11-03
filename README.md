@@ -56,27 +56,39 @@ The initial version of the project focuses on providing an engaging experience. 
 
 ### User Demographic
 
-- 
+Generally speaking, the project is designed to appeal to a broad age range. The website and it's game-like approach to dream interpretation is easily accessible to anyone interested and open to dream interpretation. However, the website targets mainly users who are beginners in the field of dream interpretation. The quiz-styled tool helps users who are curious about what their dream might mean, but who may not have any deeper knowledge about the topic or experience in dream interpretation yet. Target users are looking for a mix of entertainment and encouragement to self-reflect. 
 
 ### User Goals
 
-- 
+- The user wants to explore the meaning of their dream. 
+- The user is curious about the topic of dream interpretation and wants to get some insights about what symbols and themes mean according to the field of study. 
+- The user wants to be entertained with a light-hearted game-like quiz. 
 
 ### User Expectations
 
 - A responsive, accessible website on all devices (mobile, tablet, desktop).
-- User-friendly design with clear, inspiring content.
-- Intuitive navigation and consistent user experience.
+- User-friendly and straightforward design with minimal steps to start the game. 
+- Intuitive navigation that guides the user throught the experience without distraction. 
+- Interactive, clickable elements that make it easy to progress through the game. 
+- A visible progress bar that helps track the position within the game. 
+- A clear outcome at the end of the game: A unique dream interpretation based on the answers chosen. 
+- If the user choses to start over, they expect the score and with in the progress bar to be reset. 
 
 ### User Stories
 
-#### For the User
+#### As a user ... 
 
-- 
+- I want to explore the meaning of my dreams in a fun and interactive way. 
+- I want to reflect on my subconcious thoughts and hidden feelings. 
+- I want clear steps (no multiple choice, one question, one answer) to answer the questions. 
+- I want a straightforward layout, so I can start the game easily and quickly. 
+- I want to gain some insight into the meaning of my dream and get a feedback after answering all questions. 
 
-#### For the Site Owner
+#### As the site owner ... 
 
-- 
+- I want user to return to the site thanks to it's engaging and game-like approach on the topic. 
+- I want to encourage users to practice introspection. 
+- I want to teach users to watch out for symbols and themes in their dreams. 
 
 ## Design
 

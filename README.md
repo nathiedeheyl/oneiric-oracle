@@ -199,7 +199,9 @@ Changed the white text on `background-color: #B26E63;` to textcolor black to ens
 | Landing page layout, info text box toggle, start game icon, footer, quit session button, question session layout, progress bar and feedback layout display correctly on screens larger than 767px | ✅ | 
 | Landing page layout, info text box toggle, start game icon, footer, quit session button, question session layout, progress bar and feedback layout display correctly on screens larger than 1024px | ✅ | 
 
-Accessability validation: https://pagespeed.web.dev/analysis/https-nathiedeheyl-github-io-oneiric-oracle/kgevuq9ltr?form_factor=mobile 
+Accessability validation: 
++ https://pagespeed.web.dev/analysis/https-nathiedeheyl-github-io-oneiric-oracle/kgevuq9ltr?form_factor=mobile 
++ Lighthouse tool in Chrome dev tools 
 
 ### Code validation
 

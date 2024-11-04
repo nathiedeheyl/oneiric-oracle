@@ -176,7 +176,8 @@ Accessability validation: https://pagespeed.web.dev/analysis/https-nathiedeheyl-
 | **Validation Issue**                                | **Screenshot**          | **Fix**                                                |
 |-----------------------------------------------------|--------------------------|--------------------------------------------------------------|
 | Attribute `aria-expanded` not valid at an early stage | ![Error Screenshot](assets/images/html_validation_2.png) | Removed the attribute to avoid confusion while working on the project | 
-| Stray end tag `div` after wrapping up last corrections to the html | ![Error Screenshot](assets/images/html_validation_5.png) | Removed leftover stray elements from code. |
+| Stray end tag `div` after wrapping up last corrections to the html | ![Error Screenshot](assets/images/html_validation_5.png) | Removed leftover stray elements from code. | 
+| Lighthouse check on final version revealed an issue in User Experience | ![Error Screenshot](assets/images/lighthouse_check_1.png) | Adjusted font-size to ensure legible font-size for intro-paragraph | 
 
 | Final code Validation  | Result  |
 | ------| ------- |

@@ -1,7 +1,7 @@
 # Your sometimes friendly Oneiric Oracle
 ## For you it's probably just a game, but the stars are being very serious about this. 
 
-![](assets/images/Preview_Responsiveness.png)
+![](assets/images/mockup_responsiveness.png)
 
 [Preview the live site here](https://nathiedeheyl.github.io/oneiric-oracle/)
 

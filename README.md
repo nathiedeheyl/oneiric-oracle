@@ -259,6 +259,7 @@ The site was deployed using GitHub Pages. The steps to deploy are the following:
 - Contrast check: https://webaim.org/resources/contrastchecker/ 
 - Fonts: https://fonts.google.com/
 - Code Institute's Submissions repository: https://github.com/Code-Institute-Submissions/ 
+- Practice walkthrough project: https://www.youtube.com/watch?v=riDzcEQbX6k 
 - Research on elements, attributes, properties and functions, mainly using: https://developer.mozilla.org/ , https://www.w3schools.com/ , and https://stackoverflow.com/ or https://css-tricks.com/. 
 
 ## Acknowledgments 

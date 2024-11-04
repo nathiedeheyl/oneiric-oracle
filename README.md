@@ -121,13 +121,43 @@ Changed the white text on `background-color: #B26E63;` to textcolor black to ens
 
 ## Features
 
-- Start button in form of violet crystal ball img with label guiding user to click button to start the game 
-- Toggle down info box 
-- Text in info box is scrollable when text content is larger than info text box on screen 
-- Quit session button to return to landing page layout 
-- Quiz-style question cards with clickable answer buttons that lead to next question card being displayed 
+<details>
+<summary>Start button feature</summary>
+
+![Start button feature screenshot](assets/images/features_1.png)
+
+</details>
+<details>
+<summary>Toggle down info box</summary>
+
+![Toggle down info box screenshot](assets/images/features_2.png)
+
+</details>
+<details>
+<summary>Scroll bar in toggle down info box</summary>
+
+![Scroll bar screenshot](assets/images/features_3.png)
+
+</details> 
+<details>
+<summary>Quit session button to return to landing page layout</summary>
+
+![Quit session button to return to landing page layout screenshot](assets/images/features_4.png)
+
+</details> 
+<details>
+<summary>Quiz-style question cards with clickable answer buttons</summary>
+
+![Quiz-style question cards with clickable answer buttons screenshot](assets/images/features_5.png)
+
+</details> 
 - Question cards have a slightly flexible layout with a min-height to balance the design and layout of question cards and the text on them 
-- Dynaic progress bar 
+<details>
+<summary>Dynaic progress bar</summary>
+
+![Dynaic progress bar screenshot](assets/images/features_6.png)
+
+</details> 
 
 ## Possible Future Features
 

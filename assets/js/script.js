@@ -163,7 +163,6 @@ function showQuestions() {
     questionText[0].innerText = questions[currentQuestionIndex].question;
 
     for (let i = 0; i < answerButtons.length; i++) {
-        console.log(questions[0].answers[0].text);
         answerButtons[i].innerText = questions[currentQuestionIndex].answers[i].text;
     }
 
@@ -186,9 +185,7 @@ function answerQuestion(event) {
 
     // Calculate score from clicked button 
     let score = parseInt(event.target.getAttribute('data-value'));
-    console.log(score);
     totalScore += score;
-    console.log(totalScore);
 
     currentQuestionIndex++;
     // Show next question and update progress or show feedback: 

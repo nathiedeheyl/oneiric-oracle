@@ -223,6 +223,10 @@ html: https://validator.w3.org/nu/#textarea
 css: https://jigsaw.w3.org/css-validator/  
 js: https://jshint.com  
 
+### Manual testing 
++ I've tested all features manually, no errors appear in the console. 
++ I've controlled the flow of the programm so there can't be invalid inputs. 
+
 ### Bugs
 
 | **Bug Description** | **Screenshot** | **Fix** | 
@@ -246,7 +250,6 @@ The site was deployed using GitHub Pages. The steps to deploy are the following:
 ### Media
 
 - Favicon Emoji Source: <a href="https://www.flaticon.com/free-icons/crystal-ball" title="crystal ball icons">Crystal ball icons created by Freepik - Flaticon</a> 
-- Flaticon Timer Emoji <a href="https://www.flaticon.com/free-icons/timer" title="timer icons">Timer icons created by Freepik - Flaticon</a>
 - Flaticon cloud and question mark icon: <a href="https://www.flaticon.com/free-icons/question" title="question icons">Question icons created by Freepik - Flaticon</a>
 - Favicon converter: https://favicon.io/favicon-converter/ 
 
